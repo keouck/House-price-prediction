@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Form.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Form.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Responsive-Form-1.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Responsive-Form.css')}}">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="index.html">Housepricepredictor</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href="{{url_for('home')}}">Housepricepredictor</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item nav-link"><a class="nav-link active" href="index.html#about">About</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="predict.html">Try</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="index.html#contact">contact</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="{{url_for('predict')}}">Try</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <h2>About HousePricepredictor</h2>
                     <p>HousePricePredictor is a free online tool that you can use to get a price prediction for your house.</p>
                     <p>We use an algorithm called Linear Regression to make our predictions and all of our models have an accuracy above 90%</p>
-                    <p>This project is also completely libre and transparent. You can contribute here.</p>
+                    <p>This project is also completely libre and transparent. You can contribute <a href="https://github.com/dipityli/House-price-prediction">here.</a></p>
                 </div>
             </div>
         </div>
@@ -80,8 +80,9 @@
         </div>
     </section>
     <div class="map-clean"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/grayscale.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/grayscale.js')}}"></script>
 </body>
 
 </html>
