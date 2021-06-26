@@ -1,11 +1,12 @@
 # House-price-prediction
 This is a web application that predicts the pricing for your house based on multiple parameters such as location, house features, etc.
-We currently support 6 Indian cities. ie - Delhi, Chennai, Mumbai, Hyderabad, Bengaluru and kolkata.
+We currently support 6 Indian cities. ie - Delhi, Chennai, Mumbai, Hyderabad, Bengaluru and Kolkata.
 
 ## How to run:
 
-The easiest way to use this project, is to use the hosted website. This project currently doesn't have that right now, but we are working on it
-and it will be there in the future.
+You can visit the website and use it there. Currently the project is under development so the site hasn't been setup yet. 
+
+If you would like to run it locally:
 
 1. Clone this repository by using git, or download the zip file over [here](https://github.com/dipityli/House-price-prediction/archive/refs/heads/main.zip)
 and extract.
