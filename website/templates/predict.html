@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item nav-link"><a class="nav-link active" href="{{url_for('home')}}#about">About</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="predict.html">Try</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="{{url_for('predict')}}">Try</a></li>
                     <li class="nav-item nav-link"><a class="nav-link" href="{{url_for('home')}}#contact">contact</a></li>
                 </ul>
             </div>
@@ -37,25 +37,26 @@
     <center>
 
     <div class="col-md-6">
-        <form action="{{ url_for('predict_form_inputs')}}" method="post">
+        <form action="{{ url_for('predict_form_inputs') }}" method="post">
             <h1>House information</h1>
 
-                <select class="border rounded-0 form-control"  style="width: 500px;margin-bottom: 15px;" name="city" required="required"/><br>
+                <select class="border rounded-0 form-control" style="width: 500px;margin-bottom: 15px;" name="city" required="required"/><br>
                   <option value="Delhi">Delhi</option>
                   <option value="Mumbai">Mumbai</option>
                   <option value="Bangalore">Bangalore</option>
                   <option value="Hyderabad">Hyderabad</option>
                   <option value="Chennai">Chennai</option>
                   <option value="Kolkata">Kolkata</option>
-                    </select> 
-                <input class="border rounded-0 form-control" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Locality">
-                <input class="border rounded-0 form-control" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Number of amenities">
-                <input class="border rounded-0 form-control" type="text" placeholder="Number of bedrooms" style="margin-bottom: 15px;width: 500px;">
-                <button class="btn btn-primary" type="button" style="width: 500px;margin-right: 0px;margin-left: 0px;background-color: #00baff;">Predict</button>
+                </select> 
+
+                <input class="border rounded-0 form-control" name="locality" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Locality">
+                <input class="border rounded-0 form-control" name="amenities" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Number of amenities">
+                <input class="border rounded-0 form-control" name="bedrooms" type="text" placeholder="Number of bedrooms" style="margin-bottom: 15px;width: 500px;">
+                <button class="btn btn-primary" type="submit" style="width: 500px;margin-right: 0px;margin-left: 0px;background-color: #00baff;">Predict</button>
         </form>
     </div>
 
-    {{prediction_text}}
+    {{ output }}
 
     </center>
 

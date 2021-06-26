@@ -14,9 +14,9 @@ def predict():
 @app.route('/predict_form_inputs', methods=['POST'])
 def predict_form_inputs():
     
-    values = [int(x) for x in request.form.values()]
+    data = [str(x) for x in request.form.values()]
 
-    return render_template('predict.html', prediction_text=values)
+    return render_template('predict.html', output=data)
 
 
 if __name__ == "__main__":
