@@ -31,5 +31,7 @@ The data set used for this project is [available on kaggle](https://www.kaggle.c
 
 Any Contributions are welcome and the project uses the [MIT licence](https://github.com/dipityli/House-price-prediction/blob/main/LICENCE). 
 
+This website has been tested on the brave browser. If you face any issues on any other browsers, please create a new issue. 
+
 Please note that no machine learning model is a 100% accurate, and therefore we do not take any responsibilities regarding the predictions. This project is entirely
 for information purposes and to give you a rough idea of what your house may be worth.
