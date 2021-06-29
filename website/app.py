@@ -13,11 +13,11 @@ def predict():
     
 @app.route('/predict_form_inputs', methods=['POST'])
 def predict_form_inputs():
-    
-    data = [str(x) for x in request.form.values()]
+    return render_template('predict.html', output="Request registered")
 
-    return render_template('predict.html', output=data)
-
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy-policy.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)

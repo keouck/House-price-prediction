@@ -36,29 +36,36 @@
 
     <center>
 
-    <div class="col-md-6">
-        <form action="{{ url_for('predict_form_inputs') }}" method="post">
-            <h1>House information</h1>
-
-                <select class="border rounded-0 form-control" style="width: 500px;margin-bottom: 15px;" name="city" required="required"/><br>
-                  <option value="Delhi">Delhi</option>
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Bangalore">Bangalore</option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Chennai">Chennai</option>
-                  <option value="Kolkata">Kolkata</option>
-                </select> 
-
-                <input class="border rounded-0 form-control" name="locality" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Locality">
-                <input class="border rounded-0 form-control" name="amenities" type="text" style="width: 500px;margin-bottom: 15px;" placeholder="Number of amenities">
-                <input class="border rounded-0 form-control" name="bedrooms" type="text" placeholder="Number of bedrooms" style="margin-bottom: 15px;width: 500px;">
-                By clicking, "predict" you agree to our <a href="{{url_for('privacy_policy')}}">privacy policies</a>.<br><br>
-                <button class="btn btn-primary" type="submit" style="width: 500px;margin-right: 0px;margin-left: 0px;background-color: #00baff;">Predict</button>
-
-        </form>
-    </div>
-
-    {{ output }}
+        <h2>Privacy Policy</h2>
+        <p> dipityli built the HousePricePredictor webapp as a open source and free webapp. This SERVICE is provided by dipityli at no cost and is intended
+            for use as is.</p>
+        <p>This page is used to inform website visitors regarding my policies with the collection, use, and
+            disclosure of Personal Information if anyone decided to use my Service.</p>
+        <p>If you choose to use my Service, then we will not collect any kind of information.</p>
+        
+        <p><strong>Information Collection and Use</strong></p>
+        <p>The app does use third party services that may collect information used to identify you. Neither does it collect any data about yourself.
+        
+        <p><strong>Cookies</strong></p>
+        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier.
+            These are sent to your browser from the website that you visit and are stored on your devices’s
+            internal memory.</p>
+        <p>This Services does not uses these “cookies” explicitly. However, the app may use third party code
+            and libraries that use “cookies” to collection information and to improve their services. You
+            have the option to either accept or refuse these cookies, and know when a cookie is being sent
+            to your device. If you choose to refuse our cookies, you may not be able to use some portions of
+            this Service.</p>
+        
+        <p><strong>Changes to This Privacy Policy</strong></p>
+        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page
+            periodically for any changes. We will notify you of any changes by posting the new Privacy Policy
+            on this page. These changes are effective immediately, after they are posted on this page.</p>
+        
+        <p><strong>Contact Us</strong></p>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact
+            us.</p><br><br>
+        </body>
+        </html>
 
     </center>
 
