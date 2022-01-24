@@ -8,7 +8,7 @@ You can visit the website and use it there. Currently the project is under devel
 
 If you would like to run it locally:
 
-1. Clone this repository by using git, or download the zip file over [here](https://github.com/dipityli/House-price-prediction/archive/refs/heads/main.zip)
+1. Clone this repository by using git, or download the zip file over [here](https://github.com/keouck/House-price-prediction/archive/refs/heads/main.zip)
 and extract.
 
 2. Download Python and pip. Then, run `pip install -r requirements.txt` or `pip3 install -r requirements.txt` depending on your OS.
@@ -20,7 +20,7 @@ or `python3 app.py`, again, depending on OS what you use.
 
 ## Reporting bugs:
 
-To report a bug, you can visit the issues tab and report them there. If you are unfamiliar with github, click [here](https://github.com/dipityli/House-price-prediction/issues) and click the new issues button
+To report a bug, you can visit the issues tab and report them there. If you are unfamiliar with github, click [here](https://github.com/keouck/House-price-prediction/issues) and click the new issues button
 and then click the `new issue` button. Fill out an appropriate title and give a detailed description of the problem and include the steps to reproduce.
 
 If you have found a bug and would like to contribute code to fix it, please create a new PR.
@@ -29,7 +29,7 @@ If you have found a bug and would like to contribute code to fix it, please crea
 
 The data set used for this project is [available on kaggle](https://www.kaggle.com/ruchi798/housing-prices-in-metropolitan-areas-of-india) and all credit goes to the original contributor of the dataset.
 
-Any Contributions are welcome and the project uses the [MIT licence](https://github.com/dipityli/House-price-prediction/blob/main/LICENCE). 
+Any Contributions are welcome and the project uses the [MIT licence](https://github.com/keouck/House-price-prediction/blob/main/LICENCE). 
 
 This website has been tested on the brave browser. If you face any issues on any other browsers, please create a new issue. 
 
